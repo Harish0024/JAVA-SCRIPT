@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var arr=["nimal","kamal","gokul","prasad","mani","shriman"];
+    for(i in arr)
+    document.writeln(arr[i]+"<br>");
+arr.sort();
+document.writeln(arr+"<br>");
+arr.reverse()
+document.writeln(arr+"<br>");
+delete arr[3];
+document.writeln(arr+"<br>");
+var status="gokul" in arr;
+if(status)
+document.writeln("it is present");
+else
+document.writeln("it is not present");
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

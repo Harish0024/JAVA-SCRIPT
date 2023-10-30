@@ -1,0 +1,79 @@
+<!--DOM - Document object model 
+    every HTML tags are treated as object
+    DOMS mechanism allows a browser understand the structure of a typical HTML document
+    Browser has to understand the structure before the document is shown on the screen
+
+
+    DOM tree--Helps the browser to understand the structure
+    .DOM tree is created by the browserr when an html file is displayed
+       every noode is a object that represents a tag
+       every node may have child node
+       dom tree has a root node
+       types of tree
+       in order when the depth of the tree is larger,
+       post order ,
+       pre order when the depth of tree is lesser
+
+       search of node
+       1 by id
+
+       2 by name
+       eg.doc.empform.firstname="kowshik s"
+       DOM operations that can be performed using in nuild function
+
+       document.createElement()
+       appendChild()
+       removeChild()
+
+
+
+
+
+-->
+<HTML>	
+<head>	
+<title>DOM Example
+</title>
+</head>	
+
+<body>	
+<p  id="p1">Paragraph1</p>
+<b  id="b1">Bold text</b>
+<form  name="empform">
+<input type="text" name="firstName" /><br>
+<input type="checkbox"  id="h1" />Music <br>
+</form>
+<script>
+    var uline=document.createElement('u');
+    uline.innerText='underlined text.DOM operation';
+    document.body.appendChild(uline);
+
+    var input=document.createElement('br');
+    document.forms[0].appendChild(input);
+
+    var textfield=document.createElement('input');
+    textfield.type='text';
+    textfield.placeholder='enter your name';
+    textfield.width=100;
+    textfield.height=40;
+    document.forms[0].appendChild(textfield);
+
+    var radiofield=document.createElement('input');
+    textfield.type='radio';
+    textfield.value=true;
+    textfield.width=100;
+    textfield.height=40;
+    document.forms[0].appendChild(radiofield);
+
+    var cfirm=confirm("want to remove <b> tag tes/no")
+    if(cfirm)
+    {
+        //search for the tag having id if it is found,
+        //get a pointer to the tag.
+        var btag=document.getElementById("b1");
+        document.body.removeChild(btag);
+
+    }
+</script>
+</body>	
+</html> 

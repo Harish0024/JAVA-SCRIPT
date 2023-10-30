@@ -1,0 +1,31 @@
+<html>
+    <script>
+          var arr=["GavsTech",100,299.99,true,"chennai",200];
+          for(i in arr)
+            document.writeln(arr[i]+"@"+i+"<br>");
+        for(i of arr)
+        document.writeln(i+"<br>");
+    document.writeln(arr.length);
+    document.writeln(arr.sort()+"<br>");
+    arr.reverse();
+    document.writeln(arr+"<br>");
+   var v= arr.indexOf(true);
+   if(v==-1)
+   document.writeln("<br>not found")
+else
+   document.writeln(v);
+    arr.join("....");
+    document.writeln( arr.join("....")+"<br>");
+    arr.push(800);
+    arr.push("bangalore");
+    document.writeln(arr+"<br>");
+    arr.pop();
+    document.writeln(arr+"<br>");
+    arr.slice(1,4);
+    document.writeln(arr.slice(1,4));
+    
+    </script>
+    <body>
+
+    </body>
+</html>

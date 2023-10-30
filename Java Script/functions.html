@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function test(num1,num2){
+            document.writeln(Math.sqrt(num1)+"<br>");
+            document.writeln(Math.sqrt(num2)+"<br>")
+        }
+        test(100,4);
+        test(4,400);
+       
+        var validate=(age)=>
+        //var variable =function(age)
+        {
+            
+            if(age<=18 || age>=60)
+            document.writeln("<b>not Eligible for job</b>")
+        else{
+            document.writeln(" <b>eligible</b>");
+        }
+        }
+        validate(22);
+
+        var calc=new Function("num1,num2","return num1*num2;");
+
+        var result=calc(100,200);
+        document.writeln("<br>"+result);
+        //call back functions :two types of call back functions 1.manual call back function
+        //automated call  back functions
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

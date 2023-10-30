@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1" style="color:red">
+
+    </div>
+    
+</body>
+<script>
+    var age=prompt("Enter your age",18);
+    try{
+    if(age<18 )
+    throw "You are a kid";
+    else if (age>60)
+    throw "Take rest";
+    
+    else
+    document.writeln("You can apply for job");
+    }catch(e){
+        var divTag=document.getElementById("d1");
+        divTag.innerHTML=e;
+    }
+    finally{
+        document.writeln("<br>now register for an email");
+        window.open("http://mail.yahoo.com","_self");
+        //self is used for opening in same page
+        //_blank or _target open yahoo in new tab
+    }
+</script>
+
+</html>
